@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
         body {
             margin: 0;
@@ -25,24 +26,100 @@
 
         .topnav a:hover {
             background-color: #D1D0EC;
-            color: black;
+            color: black;   
         }
+        .topnav a.active{
+            background-color:#afaed2;
+            opacity: 1;
+        }
+        html {
+  box-sizing: border-box;
+}
 
-        body {
-            background-image: url('../asset/img/bgimage.png');
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
-        }
+*, *:before, *:after {
+  box-sizing:inherit;
+}
+
+.column {
+  float: left;
+  width: 33%;
+  margin-bottom: 40px;
+  padding: 0 8px;
+  margin-top: 80px;
+
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 blue;
+  margin: 8px;
+}
+
+.about-section {
+  padding: 30px;
+  text-align: center;
+  background-color: lightsalmon;
+  color: white;
+}
+
+/* .button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+} */
+
+/* .button:hover {
+  background-color: #555;
+} */
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+        
     </style>
 </head>
 <body>
     <div class="topnav">
-        <a href="sign_up.html">SIGN UP</a>
         <a href="contact.html">CONTACT</a>
-        <a href="about.html">ABOUT US</a>
+        <a class="active" href="about.html">ABOUT US</a>
         <a href="login.html">LOGIN</a>
         <a href="home.html">HOME</a>
     </div>
+    <div class="about-section">
+        <h1>About Us</h1>
+        <h2>NO ONE HAS EVER BECOME POOR BY GIVING</h2>
+        <p>Money is not the only commodity that is fun to give.</p>
+        <p>We can give time,our experties,our love,or simply give a smile.</p>
+        <p>what does that cost?</p>
+        <p>The point is, none of us can ever run out of something worthwhile to give</p>
+      </div>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="../asset/img/image1.png" style="width: 85%;margin-left: 35px;">
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="../asset/img/image2.png"  style="width: 85%; margin-left: 35px;">
+          </div>
+        </div>
+        
+        <div class="column">
+          <div class="card">
+            <img src="../asset/img/image3.png" style="width: 85%;margin-left: 35px;">
+          </div>
+        </div>
+      </div>
+   
 </body>
 </html>
